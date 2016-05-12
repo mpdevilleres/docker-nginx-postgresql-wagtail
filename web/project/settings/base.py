@@ -24,6 +24,9 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 # Application definition
 
 INSTALLED_APPS = [
+    'overextends',
+    'branding',
+
     'home',
     'search',
 
@@ -75,6 +78,7 @@ TEMPLATES = [
         ],
         'APP_DIRS': True,
         'OPTIONS': {
+            'builtins': ['overextends.templatetags.overextends_tags'],
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
